@@ -40,7 +40,7 @@ const FeaturesArea = () => {
         },
     ]
   return (
-    <div className='grid grid-rows-2 grid-cols-3 gap-20'>
+    <div className='grid sm:grid-rows-3 sm:grid-cols-2 md:grid-rows-2 md:grid-cols-3 gap-20'>
         {React.Children.toArray(featureItems.map((featureItem)=>(
             <div className='flex flex-col justify-center items-center'>
                 <img className='mb-7' src={featureItem.img} alt={featureItem.title} />

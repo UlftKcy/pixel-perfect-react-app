@@ -3,7 +3,7 @@ import MockupImg from "../../assets/mockups.svg";
 
 const Mockups = () => {
     return (
-        <div className='w-[650px] h-[39rem] mt-6'>
+        <div className='md:w-[650px] mx-auto md:mx-0 mt-6'>
             <img src={MockupImg} alt="mockups" />
         </div>
     )

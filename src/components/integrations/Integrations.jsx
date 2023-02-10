@@ -9,16 +9,15 @@ import marketo from "../../assets/marketo.svg";
 
 const Integrations = () => {
     const logos = [slack, quickbooks, mailchimp, hubshot, zapier, googleAnalytics, marketo];
-
     return (
-        <div className='flex items-center px-28 pb-40 mt-20'>
-            <div className='pl-12'>
-                <p className='text-6xl tracking-tight leading-tight font-semibold text-neutral-900 mb-6'>Integrate with your favorite tools</p>
+        <div className='grid grid-rows-2 grid-cols-1 md:grid-rows-1 md:grid-cols-2 px-28 pb-40 mt-20'>
+            <div className='pl-12 m-auto'>
+                <p className='text-6xl tracking-tight leading-tight font-semibold text-neutral-900 mb-6'>Integrate with your <br /> favorite tools</p>
                 <span className='font-light text-sm tracking-wide'>Connect RegiM with your most favorite sales and marketing tools</span>
             </div>
-            <div className='flex justify-center flex-wrap mr-6 mt-2'>
+            <div className='grid grid-rows-2 grid-cols-4 mx-auto md:flex md:justify-center md:flex-wrap md:mr-6 mt-2'>
                 {React.Children.toArray(logos.map((logo) => (
-                    <img src={logo} alt="logo"/>
+                    <img src={logo} alt="logo" />
                 )))}
             </div>
         </div>

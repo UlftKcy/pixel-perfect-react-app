@@ -1,17 +1,17 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import LeftSection from './LeftSection'
 import Mockups from './Mockups'
 import Navbar from './Navbar'
 
 const Hero = () => {
   return (
-    <div className='h-[51rem]'>
+    <Fragment>
       <Navbar />
-      <div className='flex items-center'>
+      <div className='grid grid-rows-2 grid-cols-1 md:grid-rows-1 md:grid-cols-2 items-center'>
         <LeftSection />
         <Mockups />
       </div>
-    </div>
+    </Fragment>
   )
 }
 
