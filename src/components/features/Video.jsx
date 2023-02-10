@@ -3,7 +3,7 @@ import VideoImg from "../../assets/Video.png";
 
 const Video = () => {
   return (
-    <div className='flex justify-center mb-12'>
+    <div className='flex justify-center mb-16'>
         <img src={VideoImg} alt="video" />
     </div>
   )

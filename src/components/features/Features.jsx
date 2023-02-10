@@ -5,7 +5,7 @@ import Video from './Video'
 
 const Features = () => {
   return (
-    <div className='py-24'>
+    <div className='p-28'>
         <Content/>
         <Video/>
         <FeaturesArea/>

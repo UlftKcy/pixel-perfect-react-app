@@ -40,12 +40,12 @@ const FeaturesArea = () => {
         },
     ]
   return (
-    <div className='grid grid-rows-2 grid-cols-3 gap-6'>
+    <div className='grid grid-rows-2 grid-cols-3 gap-20'>
         {React.Children.toArray(featureItems.map((featureItem)=>(
             <div className='flex flex-col justify-center items-center'>
-                <img src={featureItem.img} alt={featureItem.title} />
-                <h6>{featureItem.title}</h6>
-                <span className='text-sm'>{featureItem.describtion}</span>
+                <img className='mb-7' src={featureItem.img} alt={featureItem.title} />
+                <h4 className='text-2xl font-semibold mb-2'>{featureItem.title}</h4>
+                <span className='font-light tracking-wider text-center'>{featureItem.describtion}</span>
             </div>
         )))}
     </div>
